@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./css/style.css" />
+      <title>Loft House</title>
+   </head>
+   <body>
+      <div class="wrapper">
+         <header class="header">
+            <div class="header__container container">
+               <div class="header__top">
+                  <a href="#" class="header__logo">
+                     <img src="./img/header-logo.svg" alt="Логотип" />
+                  </a>
+                  <div class="header__menu menu">
+                     <div class="menu__icon">
+                        <span></span>
+                     </div>
+                     <nav class="menu__body">
+                        <ul class="menu__list">
+                           <li class="menu__item">
+                              <a
+                                 href="#privileges"
+                                 class="menu__link"
+                                 data-anchor="true"
+                                 >О комплексе</a
+                              >
+                           </li>
+                           <li class="menu__item">
+                              <a
+                                 href="#apartments"
+                                 class="menu__link"
+                                 data-anchor="true"
+                                 >Наши квартиры</a
+                              >
+                           </li>
+                           <li class="menu__item">
+                              <a
+                                 href="#watching"
+                                 class="menu__link"
+                                 data-anchor="true"
+                                 >Запись на просмотр</a
+                              >
+                           </li>
+                           <li class="menu__item">
+                              <a href="#" class="menu__link">Ипотека</a>
+                           </li>
+                           <li class="menu__item">
+                              <a href="#" class="menu__link">Контакты</a>
+                           </li>
+                        </ul>
+                     </nav>
+                  </div>
+               </div>
+               <div class="header__title">
+                  <h1 class="header__title-text">
+                     Жилой комплекс в историческом центре
+                  </h1>
+                  <img
+                     class="header__title-img"
+                     src="./img/header/mouse.svg"
+                     alt="scroll"
+                  />
+               </div>
+               <div class="header__footer">
+                  <a href="#" class="header__footer-link">
+                     <img src="./img/header/map.svg" alt="map" />
+                     <p>Наб. реки Фонтанки 10-15</p>
+                  </a>
+                  <a href="#" class="header__footer-link">
+                     <img src="./img/header/phone.svg" alt="map" />
+                     <p>8 (812) 123-45-67</p>
+                  </a>
+               </div>
+            </div>
+         </header>
+         <main class="main">
+            <section class="main__privileges privileges" id="privileges">
+               <div class="privileges__container container anim">
+                  <div class="privileges__row">
+                     <div class="privileges__body">
+                        <div class="privileges__item">
+                           <img
+                              class="privileges__img"
+                              src="./img/main/privileges/1.svg"
+                              alt=""
+                           />
+                           <div class="privileges__text">
+                              Рядом исторические парки и скверы
+                           </div>
+                        </div>
+                     </div>
+                     <div class="privileges__body">
+                        <div class="privileges__item">
+                           <img
+                              class="privileges__img"
+                              src="./img/main/privileges/2.svg"
+                              alt=""
+                           />
+                           <div class="privileges__text">
+                              Полностью обустроенный
+                           </div>
+                        </div>
+                     </div>
+                     <div class="privileges__body">
+                        <div class="privileges__item">
+                           <img
+                              class="privileges__img"
+                              src="./img/main/privileges/3.svg"
+                              alt=""
+                           />
+                           <div class="privileges__text">
+                              10 фонтанов на территории
+                           </div>
+                        </div>
+                     </div>
+                     <div class="privileges__body">
+                        <div class="privileges__item">
+                           <img
+                              class="privileges__img"
+                              src="./img/main/privileges/4.svg"
+                              alt=""
+                           />
+                           <div class="privileges__text">6 км велодорожек</div>
+                        </div>
+                     </div>
+                  </div>
+                  <img
+                     src="./img/main/privileges/BG.png"
+                     alt="Номер слайда"
+                     class="privileges__bg"
+                  />
+               </div>
+            </section>
+            <section class="main__apartments apartments" id="apartments">
+               <div class="apartments__container container anim">
+                  <h2 class="apartments__title">Наши квартиры</h2>
+                  <div class="apartments__cards cards">
+                     <div class="cards__row">
+                        <div class="cards__body">
+                           <a
+                              href="#"
+                              class="cards__item _modalOpen"
+                              id="cardsOpenModal"
+                           >
+                              <div class="cards__title">
+                                 Пентхаус “Loft Олимп”
+                              </div>
+                              <img
+                                 src="./img/main/apartments/1.jpg"
+                                 alt="фото Квартиры"
+                                 class="cards__img"
+                                 id="cardsImg"
+                              />
+                           </a>
+                        </div>
+                        <div class="cards__body">
+                           <a href="#" class="cards__item" id="cardsOpenModal">
+                              <div class="cards__title">
+                                 Апартаменты “Nice Loft”
+                              </div>
+                              <img
+                                 src="./img/main/apartments/2.jpg"
+                                 alt="фото Квартиры"
+                                 class="cards__img"
+                                 id="cardsImg"
+                              />
+                           </a>
+                        </div>
+                        <div class="cards__body">
+                           <a href="#" class="cards__item" id="cardsOpenModal">
+                              <div class="cards__title">
+                                 Апартаменты “Loft Studio”
+                              </div>
+                              <img
+                                 src="./img/main/apartments/3.jpg"
+                                 alt="фото Квартиры"
+                                 class="cards__img"
+                                 id="cardsImg"
+                              />
+                           </a>
+                        </div>
+                        <div class="cards__body">
+                           <a href="#" class="cards__item" id="cardsOpenModal">
+                              <div class="cards__title">
+                                 Loft квартира “Престиж”
+                              </div>
+                              <img
+                                 src="./img/main/apartments/4.jpg"
+                                 alt="фото Квартиры"
+                                 class="cards__img"
+                                 id="cardsImg"
+                              />
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <img
+                     src="./img/main/apartments/bg.png"
+                     alt="Номер слайда"
+                     class="apartments__bg"
+                  />
+               </div>
+            </section>
+            <section class="main__watching watching" id="watching">
+               <div class="watching__container container anim">
+                  <div class="watching__row">
+                     <div class="watching__item watching__item-title">
+                        <div class="watching__body">
+                           <h2 class="watching__title">Хотите посмотреть?</h2>
+                        </div>
+                     </div>
+                     <div class="watching__item">
+                        <div class="watching__body">
+                           <div class="watching__text">
+                              ЖК LoftHouse – это проект бизнес-класса,
+                              расположенный в центре города, на Наб. реки
+                              Фонтанки 10-15. Комплекс предлагает своим жильцам
+                              квартиры площадью от 40 до 170 кв. м. В здании
+                              будет три секции, в которых разместится всего 56
+                              квартир.
+                           </div>
+                        </div>
+                     </div>
+                     <div class="watching__item">
+                        <div class="watching__body">
+                           <form action="#" class="watching__form form">
+                              <div class="form__item">
+                                 <div class="form__item-body">
+                                    <input
+                                       type="text"
+                                       class="form__input"
+                                       placeholder="Ваше имя"
+                                    />
+                                 </div>
+                              </div>
+                              <div class="form__item">
+                                 <div class="form__item-body">
+                                    <input
+                                       type="tel"
+                                       class="form__input"
+                                       placeholder="Ваш телефон"
+                                    />
+                                 </div>
+                              </div>
+                              <div class="form__item">
+                                 <div class="form__item-body">
+                                    <div class="form__text">
+                                       *Мы никому не передаем ваши данные. И не
+                                       сохраняем ваш номер в базу.
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="form__item">
+                                 <div class="form__item-body">
+                                    <button class="form__button">
+                                       Посмотреть район
+                                    </button>
+                                 </div>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </main>
+         <footer class="footer">
+            <div class="footer__container container">
+               <a href="#" class="footer__logo">
+                  <img src="./img/header-logo.svg" alt="Логотип" />
+               </a>
+               <div class="footer__links links">
+                  <ul class="links__column">
+                     <li class="links__item">
+                        <a href="#" class="links__link">О комплексе</a>
+                     </li>
+                     <li class="links__item">
+                        <a href="#" class="links__link">Район</a>
+                     </li>
+                     <li class="links__item">
+                        <a href="#" class="links__link">Каталог квартир</a>
+                     </li>
+                     <li class="links__item">
+                        <a href="#" class="links__link">Ипотека</a>
+                     </li>
+                     <li class="links__item">
+                        <a href="#" class="links__link">Контакты</a>
+                     </li>
+                  </ul>
+                  <ul class="links__column">
+                     <li class="links__item">
+                        <a href="#" class="links__link">Поселение и переезд</a>
+                     </li>
+                     <li class="links__item">
+                        <a href="#" class="links__link">Сервисные услуги</a>
+                     </li>
+                     <li class="links__item">
+                        <a href="#" class="links__link"
+                           >Экологическая устойчивость</a
+                        >
+                     </li>
+                     <li class="links__item">
+                        <a href="#" class="links__link"
+                           >Инвестиционные возможности</a
+                        >
+                     </li>
+                     <li class="links__item">
+                        <a href="#" class="links__link"
+                           >Программа лояльности
+                        </a>
+                     </li>
+                  </ul>
+                  <ul class="links__column">
+                     <li class="links__item">
+                        <a href="#" class="links__link"
+                           >Адрес: Наб. реки Фонтанки 10-15s</a
+                        >
+                     </li>
+                     <li class="links__item">
+                        <a href="#" class="links__link"
+                           >Телефон: 8 (812) 123-45-67</a
+                        >
+                     </li>
+                     <li class="links__item">
+                        <a href="#" class="links__link"
+                           >Отдел продаж: 10:00 - 20:00</a
+                        >
+                     </li>
+                     <li class="links__item">
+                        <a href="#" class="links__link"
+                           >E-mail: <span>vip@lofthouse.ru</span></a
+                        >
+                     </li>
+                     <li class="links__item links__social">
+                        <a href="#" class="links__link">
+                           <img src="./img/footer/youtube.svg" alt="youtube" />
+                        </a>
+                        <a href="#" class="links__link">
+                           <img src="./img/footer/vk.svg" alt="vk" />
+                        </a>
+                        <a href="#" class="links__link">
+                           <img
+                              src="./img/footer/facebook.svg"
+                              alt="facebook"
+                           />
+                        </a>
+                        <a href="#" class="links__link">
+                           <img
+                              src="./img/footer/instagram.svg"
+                              alt="instagram"
+                           />
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </footer>
+      </div>
+
+      <script src="./js/script.js"></script>
+      <script src="./js/plugins/animSrcoll.js"></script>
+      <script src="./js/plugins/modal.js"></script>
+   </body>
+</html>
