@@ -75,6 +75,10 @@ select {
   background-color: transparent;
 }
 
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
 input::-ms-clear {
   display: none;
 }
@@ -380,6 +384,21 @@ body.locked {
 .anim.watching__container.active {
   right: 0;
 }
+.anim.video__container {
+  opacity: 0;
+  transition: all 1s ease 0s;
+}
+.anim.video__container.active {
+  opacity: 1;
+}
+.anim.map__container {
+  position: relative;
+  left: -100%;
+  transition: all 1s ease 0s;
+}
+.anim.map__container.active {
+  left: 0;
+}
 
 /*tablet*/
 @media (max-width: 991.98px) {
@@ -589,6 +608,7 @@ body.locked {
   font-size: 16px;
   line-height: 150%;
 }
+/*----------------------------------------------*/
 .form {
   display: flex;
   flex-wrap: wrap;
@@ -671,6 +691,69 @@ body.locked {
     min-width: 255px;
   }
 }
+/*------------------video--------------------------*/
+.video__container {
+  text-align: center;
+}
+.video__link {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.2s ease 0s;
+  max-width: 720px;
+}
+.video__link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(36, 43, 51, 0.8) 0%, rgba(36, 43, 51, 0.8) 100%);
+}
+.video__link:hover {
+  box-shadow: 0 0 10px rgba(45, 52, 60, 0.2), 0 0 20px rgba(45, 52, 60, 0.8);
+}
+.video__link:hover .video__icon {
+  transform: translate(-50%, -50%) scale(1.2);
+  filter: saturate(1.5);
+}
+.video__icon {
+  position: absolute;
+  max-width: 100px;
+  z-index: 9;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease 0s;
+}
+/*------------map----------------------------*/
+.map__container {
+  padding: 180px 18px;
+}
+.map__title {
+  margin: 0 0 88px 0;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  color: #d4c17f;
+}
+.map__map-display {
+  height: 358px;
+  width: 100%;
+  background: #626262;
+}
+
+/*tablet*/
+@media (max-width: 991.98px) {
+  .map__container {
+    padding: 100px 18px 100px 18px;
+  }
+  .map__title {
+    margin: 0 0 30px 0;
+    font-size: 26px;
+  }
+}
 /*---------------------------------------------*/
 .footer {
   background: #2d343c;
@@ -724,4 +807,37 @@ body.locked {
   .links__column:not(:last-child) {
     margin: 0 20px 30px 0;
   }
+}
+/*стилизация карты*/
+.map [class*=copyrights-pane] {
+  opacity: 0;
+  transition: all 0.3s ease 0s;
+}
+
+.map:hover [class*=copyrights-pane] {
+  opacity: 1;
+}
+
+[class*=gototech] {
+  display: none !important;
+}
+
+[class*=ground-pane] {
+  filter: grayscale(1) sepia(10%);
+}
+
+/*balloon*/
+[class*=balloon__layout],
+[class*=balloon__content] {
+  background-color: #242b33 !important;
+  color: #fff !important;
+}
+
+[class*=balloon__tail]::after {
+  background-color: #242b33 !important;
+}
+
+[class*=balloon__layout],
+[class*=balloon__content] a {
+  color: var(--accent) !important;
 }

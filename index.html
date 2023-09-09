@@ -45,10 +45,12 @@
                               >
                            </li>
                            <li class="menu__item">
-                              <a href="#" class="menu__link">Ипотека</a>
+                              <a href="#video" class="menu__link">Видео</a>
                            </li>
                            <li class="menu__item">
-                              <a href="#" class="menu__link">Контакты</a>
+                              <a href="#mapSection" class="menu__link"
+                                 >Район на карте</a
+                              >
                            </li>
                         </ul>
                      </nav>
@@ -266,6 +268,32 @@
                   </div>
                </div>
             </section>
+            <section class="main__video video" id="video">
+               <div class="video__container container anim">
+                  <a
+                     href="https://www.youtube.com/watch?v=ghBXAKeMc3I&ab_channel=Gamelifeow"
+                     class="video__link"
+                     target="_blank"
+                  >
+                     <img
+                        src="./img/main/video/play.svg"
+                        alt=""
+                        class="video__icon"
+                     />
+                     <img
+                        src="./img/main/video/video-img.jpg"
+                        alt=""
+                        class="video__img"
+                     />
+                  </a>
+               </div>
+            </section>
+            <section class="main__map map" id="mapSection">
+               <div class="map__container container anim">
+                  <h2 class="map__title">Район на карте</h2>
+                  <div class="map__map-display" id="map"></div>
+               </div>
+            </section>
          </main>
          <footer class="footer">
             <div class="footer__container container">
@@ -360,6 +388,10 @@
          </footer>
       </div>
 
+      <script
+         src="https://api-maps.yandex.ru/2.1/?apikey=1713b0b4-c361-46cd-a0c1-c0bb4890caec&lang=ru_RU"
+         type="text/javascript"
+      ></script>
       <script src="./js/script.js"></script>
       <script src="./js/plugins/animSrcoll.js"></script>
       <script src="./js/plugins/modal.js"></script>
